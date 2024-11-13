@@ -3,29 +3,22 @@ import React, { useState } from "react"
 
 const Light = () => {
 
-    const [red, setColor1] = useState("bg-white")
-    const [orange, setColor2] = useState("bg-white")
-    const [green, setColor3] = useState("bg-white")
+    const [color, setColor] = useState()
 
     return (
-        <div className= "container">
-               
-                    <div id="red-circle" className={red}  onClick={() => setColor1 ('bg-danger')}>
-                        
-                </div>
+        <div className="container">
 
-                    <div id="orange-circle" className={orange} onClick={() => setColor2 ('bg-warning')}>
-                        
-                        </div>
+            <div  onClick={() => setColor('red')} className={"light red-palid red"+((color === "red")? " red-light  glow" : "")}>
+            </div>
+            <div  onClick={() => setColor('orange')} className={"light orange-palid orange"+((color === "orange")? " orange-light glow" : "")}>
+            </div>
+            <div  onClick={() => setColor('green')} className={"light green-palid green"+((color === "green")? " green-light glow" : "")}>
+            </div>
 
-                        <div id="green-circle" className={green} onClick={() => setColor3 ('bg-success')}>
-                        
-                    </div>
-                    
-               </div>   
-               
-               
-    
+        </div>
+
+
+
 
 
     )

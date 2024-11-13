@@ -7,9 +7,9 @@ const Home = () => {
 	return (
 		<>
 			<div className="container mx-auto">
-				<div className="container">
+			
 					<Light />
-				</div>
+				
 			</div>
 		</>
 	);
