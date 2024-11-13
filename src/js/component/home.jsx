@@ -1,13 +1,16 @@
 import React from "react";
-import Light from "./light";
+import Light from "./lights.jsx";
+
 
 //create your first component
 const Home = () => {
 	return (
 		<>
-		<div className= "first">
-		<Light />
-		</div>
+			<div className="container mx-auto">
+				<div className="container">
+					<Light />
+				</div>
+			</div>
 		</>
 	);
 };
